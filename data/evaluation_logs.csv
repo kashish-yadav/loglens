@@ -1,0 +1,152 @@
+timestamp,level,service,message,request_id,endpoint,status_code,latency_ms,label
+2026-10-12 07:21:16,INFO,auth-service,"Payload schema mismatch on queue billing-events, applying defaults",req-db4acbe1,,,,Review Required
+2026-10-12 07:23:36,INFO,api-gateway,Downstream replied with an unusual code on /api/v1/orders,req-944da79e,/api/v1/orders,520,263,Review Required
+2026-10-12 08:18:20,INFO,database-service,"Readiness check ok, all dependencies reachable",req-9ddbfd05,/health,200,44,Suppress Candidate
+2026-10-12 08:40:06,INFO,notification-service,"report-rollup job completed, next run scheduled",req-98a6c53f,,,373,Suppress Candidate
+2026-10-12 08:43:39,INFO,api-gateway,Successfully processed GET /api/v1/orders (status 201),req-4f2128dc,/api/v1/orders,201,68,Suppress Candidate
+2026-10-12 09:23:21,ERROR,payment-service,Unable to capture payment for order ORD-91217: payment gateway returned failure,req-9060912a,/api/v1/payments/charge,500,2458,Keep
+2026-10-12 09:43:08,CRITICAL,auth-service,"Service crashed with segmentation fault, restarting worker",req-9cb969b5,,500,,Keep
+2026-10-12 10:48:25,WARN,auth-service,"Access denied for user user_1000, JWT expired",req-5f027a6c,/api/v1/auth/login,401,301,Keep
+2026-10-12 10:52:15,ERROR,api-gateway,Timeout waiting for response from pricing-service,req-e906f668,/api/v1/products,504,25185,Keep
+2026-10-12 11:41:57,WARN,auth-service,Downstream replied with an unusual code on /api/v1/products,req-0d6a1480,/api/v1/products,418,472,Review Required
+2026-10-12 12:01:44,ERROR,database-service,"Cannot reach database db-replica, connection attempt failed",req-cc6e6d4b,,,,Keep
+2026-10-12 12:29:33,INFO,payment-service,"Periodic ping completed, service payment-service alive",req-58f61899,,,,Suppress Candidate
+2026-10-12 13:00:47,INFO,auth-service,Access token refreshed for user_3628,req-2302f124,/api/v1/auth/session,201,111,Suppress Candidate
+2026-10-12 14:19:51,WARN,api-gateway,Downstream replied with an unusual code on /api/v1/products,req-919300c7,/api/v1/products,418,,Review Required
+2026-10-12 15:05:36,INFO,auth-service,Response sent to client for /api/v1/orders with 200,req-4d40670d,/api/v1/orders,200,136,Suppress Candidate
+2026-10-12 15:38:51,INFO,database-service,Node heartbeat acknowledged by scheduler,req-545d13df,,,,Suppress Candidate
+2026-10-12 16:19:19,DEBUG,auth-service,Access token refreshed for user_3564,req-c780eda7,/api/v1/auth/session,200,73,Suppress Candidate
+2026-10-12 17:00:33,INFO,payment-service,Service payment-service reports healthy status,req-1cc793cb,/health,200,14,Suppress Candidate
+2026-10-12 18:10:07,ERROR,api-gateway,Timeout waiting for response from shipping-service,req-def35dcf,/api/v1/orders,504,19107,Keep
+2026-10-13 00:28:17,INFO,api-gateway,"Readiness check ok, all dependencies reachable",req-b6579df3,/health,200,23,Suppress Candidate
+2026-10-13 02:07:15,INFO,database-service,Service database-service reports healthy status,req-196adfe0,/health,200,9,Suppress Candidate
+2026-10-13 04:29:19,INFO,database-service,"Periodic ping completed, service database-service alive",req-cfed6b79,,,,Suppress Candidate
+2026-10-13 08:47:00,ERROR,payment-service,Unable to capture payment for order ORD-62799: payment gateway returned failure,req-83230168,/api/v1/payments/charge,402,1053,Keep
+2026-10-13 09:08:27,INFO,auth-service,"Payload schema mismatch on queue billing-events, applying defaults",req-c5ae8602,,,,Review Required
+2026-10-13 09:42:08,ERROR,payment-service,Unable to capture payment for order ORD-41867: payment gateway returned failure,req-657492b8,/api/v1/payments/charge,402,1450,Keep
+2026-10-13 09:54:45,INFO,database-service,Service database-service reports healthy status,req-f9639484,/health,200,16,Suppress Candidate
+2026-10-13 10:13:41,INFO,payment-service,"cache-refresh job completed, next run scheduled",req-58ee082d,,,,Suppress Candidate
+2026-10-13 10:27:13,ERROR,payment-service,"Service crashed with segmentation fault, restarting worker",req-071490b7,,,,Keep
+2026-10-13 10:27:49,INFO,auth-service,"Readiness check ok, all dependencies reachable",req-26bffcd8,/health,200,36,Suppress Candidate
+2026-10-13 10:39:02,ERROR,api-gateway,Timeout waiting for response from pricing-service,req-04bbc329,/api/v1/orders,504,28658,Keep
+2026-10-13 10:39:43,INFO,api-gateway,Service api-gateway reports healthy status,req-f963501a,/health,200,39,Suppress Candidate
+2026-10-13 11:59:57,INFO,auth-service,Response sent to client for /api/v1/products with 201,req-f5ab4185,/api/v1/products,201,32,Suppress Candidate
+2026-10-13 12:28:34,WARN,notification-service,Client approaching rate limit threshold,req-0fec7681,,200,365,Review Required
+2026-10-13 12:33:16,INFO,api-gateway,Client approaching rate limit threshold,req-38680c01,,,62,Review Required
+2026-10-13 12:57:57,WARN,payment-service,Response time of 2864 ms exceeded warning threshold for /api/v1/products,req-a19bd7d5,/api/v1/products,200,,Keep
+2026-10-13 13:04:55,WARN,payment-service,/api/v1/orders is responding slowly (6646ms),req-3a3acd85,/api/v1/orders,200,6646,Keep
+2026-10-13 13:08:43,INFO,auth-service,New session sess_d6b81887 established,req-9170ca24,/api/v1/auth/session,200,147,Suppress Candidate
+2026-10-13 14:38:07,INFO,database-service,"Unexpected event type order.reconcile encountered, skipping enrichment",req-201305a5,,,,Review Required
+2026-10-13 16:16:08,INFO,auth-service,"Payload schema mismatch on queue audit-stream, applying defaults",req-6997a9b0,,,,Review Required
+2026-10-13 17:48:36,INFO,auth-service,Access token refreshed for user_2564,req-0a3061ba,/api/v1/auth/session,201,131,Suppress Candidate
+2026-10-13 19:09:09,ERROR,api-gateway,"Upstream inventory-service failed to respond within 26239 ms, returning 504",req-911d4efc,/api/v1/orders,408,26239,Keep
+2026-10-13 19:18:25,INFO,notification-service,Service notification-service reports healthy status,req-62eced86,,200,39,Suppress Candidate
+2026-10-14 04:45:42,INFO,database-service,Service database-service reports healthy status,req-4cdff10c,/health,200,7,Suppress Candidate
+2026-10-14 08:15:11,CRITICAL,database-service,Too many connections: db-replica refusing new client sessions,req-f362fba0,,,,Keep
+2026-10-14 09:33:41,DEBUG,auth-service,New session sess_ebaba1f1 established,req-09cf8696,/api/v1/auth/session,200,40,Suppress Candidate
+2026-10-14 11:55:34,WARN,api-gateway,/api/v1/products is responding slowly (4010ms),req-a6a75b77,/api/v1/products,200,4010,Keep
+2026-10-14 12:10:43,CRITICAL,database-service,"Cannot reach database db-primary, connection attempt failed",req-5a2f046c,,503,,Keep
+2026-10-14 13:00:37,INFO,notification-service,Background task cache-refresh ran to completion,req-12622bda,,,401,Suppress Candidate
+2026-10-14 13:08:40,INFO,api-gateway,Successfully processed POST /api/v1/products (status 204),req-3d076172,/api/v1/products,204,239,Suppress Candidate
+2026-10-14 13:49:19,INFO,auth-service,Successfully processed POST /api/v1/products (status 200),req-e912fdad,/api/v1/products,200,227,Suppress Candidate
+2026-10-14 14:36:46,INFO,database-service,Node heartbeat acknowledged by scheduler,req-af4f336f,,,,Suppress Candidate
+2026-10-14 14:40:34,INFO,payment-service,Response sent to client for /api/v1/cart with 201,req-ac5d5f16,/api/v1/cart,201,275,Suppress Candidate
+2026-10-14 14:41:39,WARN,payment-service,Transaction TXN-46645939 declined by issuer (insufficient funds),req-033221ec,/api/v1/payments/charge,500,2369,Keep
+2026-10-14 15:24:53,ERROR,auth-service,"Access denied for user user_2629, JWT expired",req-584693d4,/api/v1/auth/login,401,182,Keep
+2026-10-14 15:26:52,INFO,payment-service,Background task token-cleanup ran to completion,req-b2a20e30,,,121,Suppress Candidate
+2026-10-14 15:28:31,ERROR,auth-service,Failed login attempt from 10.24.37.80 for account user_7275,req-4ac5af2c,/api/v1/auth/login,403,357,Keep
+2026-10-14 16:38:52,INFO,notification-service,Background task cache-refresh ran to completion,req-acef72eb,,,194,Suppress Candidate
+2026-10-14 17:07:16,INFO,database-service,Cache miss ratio above expected range,req-83c7034a,,200,130,Review Required
+2026-10-14 17:14:45,INFO,auth-service,Service auth-service reports healthy status,req-deac42a2,,200,28,Suppress Candidate
+2026-10-14 17:27:32,DEBUG,payment-service,Node heartbeat acknowledged by scheduler,req-3cadb791,,,,Suppress Candidate
+2026-10-14 17:56:47,INFO,api-gateway,Service api-gateway reports healthy status,req-048bf30d,/health,200,,Suppress Candidate
+2026-10-14 20:07:32,ERROR,api-gateway,"Upstream pricing-service failed to respond within 27052 ms, returning 504",req-21b02405,/api/v1/orders,504,27052,Keep
+2026-10-14 23:09:01,INFO,database-service,Cache miss ratio above expected range,req-95100bf5,,,495,Review Required
+2026-10-15 06:28:40,ERROR,api-gateway,Timeout waiting for response from inventory-service,req-66b6decc,/api/v1/orders,504,19007,Keep
+2026-10-15 06:29:08,WARN,api-gateway,/api/v1/cart is responding slowly (6666ms),req-8c9fbf95,/api/v1/cart,200,6666,Keep
+2026-10-15 09:49:51,ERROR,payment-service,Unable to capture payment for order ORD-72980: payment gateway returned failure,req-74e74497,/api/v1/payments/charge,402,1377,Keep
+2026-10-15 09:54:13,INFO,auth-service,Access token refreshed for user_3159,req-beb38cfc,,200,129,Suppress Candidate
+2026-10-15 11:14:14,INFO,notification-service,Cache miss ratio above expected range,req-3f0ac117,,,617,Review Required
+2026-10-15 11:39:25,INFO,auth-service,Successfully processed POST /api/v1/cart (status 201),req-3edf72d1,/api/v1/cart,201,69,Suppress Candidate
+2026-10-15 11:50:50,INFO,api-gateway,Client approaching rate limit threshold,req-40d93128,,,837,Review Required
+2026-10-15 11:51:28,INFO,auth-service,Access token refreshed for user_2584,req-0908e8a1,/api/v1/auth/session,201,67,Suppress Candidate
+2026-10-15 12:45:38,ERROR,auth-service,Failed login attempt from 10.158.122.136 for account user_4714,req-4b49e79f,/api/v1/auth/login,401,,Keep
+2026-10-15 12:49:26,INFO,payment-service,Successfully processed POST /api/v1/products (status 200),req-0410d18c,/api/v1/products,200,226,Suppress Candidate
+2026-10-15 12:55:41,CRITICAL,database-service,Too many connections: db-primary refusing new client sessions,req-5998424b,,,,Keep
+2026-10-15 13:22:45,INFO,payment-service,"Readiness check ok, all dependencies reachable",req-4cb933e6,/health,200,10,Suppress Candidate
+2026-10-15 14:12:24,INFO,auth-service,"Payload schema mismatch on queue billing-events, applying defaults",req-603ca989,,,,Review Required
+2026-10-15 14:16:04,INFO,database-service,"Readiness check ok, all dependencies reachable",req-efdcc270,/health,200,31,Suppress Candidate
+2026-10-15 14:30:33,CRITICAL,database-service,"Cannot reach database db-replica, connection attempt failed",req-37b134c7,,503,,Keep
+2026-10-15 14:34:20,INFO,auth-service,"Periodic ping completed, service auth-service alive",req-99e5c642,,,,Suppress Candidate
+2026-10-15 15:40:16,ERROR,auth-service,"Access denied for user user_2896, JWT expired",req-0d5d48d0,/api/v1/auth/login,401,72,Keep
+2026-10-15 15:47:53,ERROR,api-gateway,Timeout waiting for response from pricing-service,req-c2955401,/api/v1/products,408,16566,Keep
+2026-10-15 16:28:13,INFO,database-service,Service database-service reports healthy status,req-bb71dd44,/health,200,20,Suppress Candidate
+2026-10-15 17:37:55,INFO,payment-service,Successfully processed POST /api/v1/products (status 201),req-b2ad52dd,/api/v1/products,201,216,Suppress Candidate
+2026-10-15 17:57:41,ERROR,auth-service,"Access denied for user user_1318, JWT expired",req-03604f60,/api/v1/auth/login,401,148,Keep
+2026-10-15 18:07:30,INFO,payment-service,Background task token-cleanup ran to completion,req-75dbfafd,,,,Suppress Candidate
+2026-10-15 18:19:00,INFO,auth-service,"Readiness check ok, all dependencies reachable",req-18cd5f9c,/health,200,,Suppress Candidate
+2026-10-15 18:54:38,ERROR,database-service,Too many connections: db-primary refusing new client sessions,req-8ba88a73,,,,Keep
+2026-10-15 22:16:08,ERROR,payment-service,Unable to capture payment for order ORD-60081: payment gateway returned failure,req-8557e1ef,/api/v1/payments/charge,500,721,Keep
+2026-10-16 06:11:32,INFO,payment-service,Client approaching rate limit threshold,req-354cb4e5,,,381,Review Required
+2026-10-16 06:46:06,WARN,notification-service,"Unexpected event type order.reconcile encountered, skipping enrichment",req-de53e9c0,,,,Review Required
+2026-10-16 06:56:43,INFO,payment-service,Unmapped HTTP status observed for /api/v1/orders,req-97112b71,/api/v1/orders,418,569,Review Required
+2026-10-16 07:44:48,INFO,notification-service,Background task report-rollup ran to completion,req-6deab51b,,,592,Suppress Candidate
+2026-10-16 08:57:47,INFO,api-gateway,"Readiness check ok, all dependencies reachable",,/health,200,38,Suppress Candidate
+2026-10-16 09:07:46,INFO,database-service,"Periodic ping completed, service database-service alive",req-57e18c84,,,,Suppress Candidate
+2026-10-16 09:50:51,INFO,payment-service,"cache-refresh job completed, next run scheduled",req-492fb2c0,,,863,Suppress Candidate
+2026-10-16 11:27:56,WARN,api-gateway,"Unexpected event type user.merge encountered, skipping enrichment",req-2dc59a2e,,,,Review Required
+2026-10-16 13:06:17,WARN,payment-service,Unable to capture payment for order ORD-16449: payment gateway returned failure,req-fd451732,/api/v1/payments/charge,402,608,Keep
+2026-10-16 13:43:22,WARN,payment-service,Response time of 3018 ms exceeded warning threshold for /api/v1/orders,req-4ef3bcd0,/api/v1/orders,200,3018,Keep
+2026-10-16 14:09:26,DEBUG,database-service,Node heartbeat acknowledged by scheduler,req-49fa0710,,,,Suppress Candidate
+2026-10-16 14:27:35,ERROR,auth-service,"Access denied for user user_4403, JWT expired",req-7d8f316a,/api/v1/auth/login,401,343,Keep
+2026-10-16 14:37:54,CRITICAL,database-service,Too many connections: db-primary refusing new client sessions,req-0e2b1cf4,,,,Keep
+2026-10-16 15:00:39,INFO,payment-service,Unmapped HTTP status observed for /api/v1/cart,req-f0a77c03,/api/v1/cart,599,759,Review Required
+2026-10-16 15:12:37,WARN,database-service,"Unexpected event type order.reconcile encountered, skipping enrichment",req-c045613a,,,,Review Required
+2026-10-16 15:20:43,INFO,api-gateway,Node heartbeat acknowledged by scheduler,req-a364ff02,,,,Suppress Candidate
+2026-10-16 15:22:25,INFO,notification-service,Background task token-cleanup ran to completion,req-c5da0435,,,174,Suppress Candidate
+2026-10-16 16:07:02,INFO,auth-service,New session sess_a6e96635 established,req-83d1f1ad,/api/v1/auth/session,200,82,Suppress Candidate
+2026-10-16 16:22:50,INFO,payment-service,Successfully processed POST /api/v1/products (status 200),req-5da323e8,/api/v1/products,200,277,Suppress Candidate
+2026-10-16 16:29:18,WARN,auth-service,Response time of 7951 ms exceeded warning threshold for /api/v1/products,req-6f1e695f,/api/v1/products,200,7951,Keep
+2026-10-16 17:43:57,WARN,payment-service,/api/v1/products is responding slowly (2008ms),req-12b447d1,/api/v1/products,200,2008,Keep
+2026-10-16 18:04:15,WARN,payment-service,Client approaching rate limit threshold,req-5ee16119,,,824,Review Required
+2026-10-16 21:09:50,INFO,auth-service,New session sess_24600a08 established,req-5d9e4e8e,/api/v1/auth/session,200,27,Suppress Candidate
+2026-10-16 22:32:54,ERROR,api-gateway,Timeout waiting for response from shipping-service,req-9cce810b,/api/v1/products,504,21216,Keep
+2026-10-17 00:51:53,INFO,api-gateway,Successfully processed GET /api/v1/orders (status 200),req-da48d4eb,/api/v1/orders,200,164,Suppress Candidate
+2026-10-17 02:30:30,WARN,payment-service,/api/v1/orders is responding slowly (1835ms),req-63ee9911,/api/v1/orders,200,1835,Keep
+2026-10-17 07:52:07,INFO,api-gateway,Response sent to client for /api/v1/orders with 200,,/api/v1/orders,200,23,Suppress Candidate
+2026-10-17 07:57:27,INFO,auth-service,Response sent to client for /api/v1/orders with 200,req-2241d4b0,/api/v1/orders,200,191,Suppress Candidate
+2026-10-17 09:21:12,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-a1eeb555,/health,200,9,Suppress Candidate
+2026-10-17 10:07:42,INFO,api-gateway,Response sent to client for /api/v1/products with 200,req-e870fc29,/api/v1/products,200,65,Suppress Candidate
+2026-10-17 10:15:59,INFO,notification-service,Service notification-service reports healthy status,req-db22ce6a,/health,200,29,Suppress Candidate
+2026-10-17 10:32:52,INFO,api-gateway,Successfully processed GET /api/v1/products (status 204),req-95d5d1ca,/api/v1/products,204,258,Suppress Candidate
+2026-10-17 10:33:40,ERROR,payment-service,Transaction TXN-18779761 declined by issuer (insufficient funds),req-4f418d98,/api/v1/payments/charge,402,1932,Keep
+2026-10-17 11:05:51,ERROR,api-gateway,Timeout waiting for response from shipping-service,req-e0f1259c,/api/v1/orders,408,6259,Keep
+2026-10-17 11:36:32,CRITICAL,auth-service,Critical exception: IndexOutOfBoundsException thrown in InvoiceBuilder.render,req-0e718d7a,,500,,Keep
+2026-10-17 13:29:50,INFO,notification-service,Client approaching rate limit threshold,req-a3eabdf9,,200,87,Review Required
+2026-10-17 13:35:01,WARN,auth-service,Failed login attempt from 10.168.20.101 for account user_6347,req-0b603396,/api/v1/auth/login,401,336,Keep
+2026-10-17 13:45:10,INFO,api-gateway,Response sent to client for /api/v1/cart with 200,req-b8af6321,/api/v1/cart,200,45,Suppress Candidate
+2026-10-17 13:58:49,INFO,api-gateway,Successfully processed GET /api/v1/orders (status 200),req-4c62add9,/api/v1/orders,200,235,Suppress Candidate
+2026-10-17 14:27:43,INFO,notification-service,Background task token-cleanup ran to completion,req-01dfc1c7,,,725,Suppress Candidate
+2026-10-17 17:01:02,INFO,payment-service,Successfully processed GET /api/v1/cart (status 201),req-6bac7680,/api/v1/cart,201,90,Suppress Candidate
+2026-10-17 17:20:52,INFO,auth-service,Response sent to client for /api/v1/products with 200,req-7f3058b7,/api/v1/products,200,123,Suppress Candidate
+2026-10-17 17:25:31,INFO,auth-service,"Readiness check ok, all dependencies reachable",req-a3d823ef,/health,200,31,Suppress Candidate
+2026-10-17 17:29:37,WARN,payment-service,Transaction TXN-11246870 declined by issuer (insufficient funds),req-37ca5dd0,,500,1663,Keep
+2026-10-17 17:36:45,INFO,auth-service,Service auth-service reports healthy status,req-0ea05331,/health,200,8,Suppress Candidate
+2026-10-17 20:05:22,CRITICAL,payment-service,Critical exception: IndexOutOfBoundsException thrown in InvoiceBuilder.render,req-47da0eb2,,,,Keep
+2026-10-17 22:46:46,INFO,api-gateway,Successfully processed GET /api/v1/cart (status 200),req-28d500af,/api/v1/cart,200,49,Suppress Candidate
+2026-10-18 00:33:45,WARN,auth-service,"Unexpected event type user.merge encountered, skipping enrichment",req-2e932631,,,,Review Required
+2026-10-18 06:03:03,WARN,auth-service,"Access denied for user user_7401, JWT expired",,/api/v1/auth/login,401,203,Keep
+2026-10-18 08:19:25,INFO,api-gateway,Node heartbeat acknowledged by scheduler,req-bacb08d8,,,,Suppress Candidate
+2026-10-18 09:23:07,WARN,payment-service,Unmapped HTTP status observed for /api/v1/cart,req-6279cdf4,/api/v1/cart,418,435,Review Required
+2026-10-18 09:59:47,INFO,auth-service,"Readiness check ok, all dependencies reachable",req-f082e4e0,/health,200,31,Suppress Candidate
+2026-10-18 11:42:56,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-b09c0a31,/health,200,43,Suppress Candidate
+2026-10-18 13:07:11,ERROR,payment-service,Transaction TXN-99930414 declined by issuer (insufficient funds),req-01028fb6,/api/v1/payments/charge,500,2280,Keep
+2026-10-18 13:15:55,INFO,payment-service,Unmapped HTTP status observed for /api/v1/cart,req-8c937657,/api/v1/cart,460,548,Review Required
+2026-10-18 13:32:43,INFO,payment-service,Response sent to client for /api/v1/products with 200,req-8eaa3653,/api/v1/products,200,217,Suppress Candidate
+2026-10-18 13:39:15,ERROR,auth-service,"Access denied for user user_7065, JWT expired",req-bd7e92e4,/api/v1/auth/login,403,261,Keep
+2026-10-18 15:22:33,ERROR,notification-service,"Service crashed with segmentation fault, restarting worker",req-4c1e9f7b,,500,,Keep
+2026-10-18 15:44:14,INFO,api-gateway,Service api-gateway reports healthy status,req-e78e92d6,/health,200,9,Suppress Candidate
+2026-10-18 16:47:21,INFO,payment-service,Service payment-service reports healthy status,req-bc6dd9da,/health,200,18,Suppress Candidate
+2026-10-18 19:11:20,INFO,payment-service,Unmapped HTTP status observed for /api/v1/orders,req-5bf876c1,/api/v1/orders,460,569,Review Required
+2026-10-18 19:33:47,WARN,api-gateway,Downstream replied with an unusual code on /api/v1/cart,req-385bfac0,/api/v1/cart,520,736,Review Required
+2026-10-18 20:38:22,WARN,api-gateway,/api/v1/orders is responding slowly (4871ms),req-c87cf809,/api/v1/orders,200,4871,Keep

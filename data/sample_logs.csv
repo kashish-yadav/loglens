@@ -1,0 +1,310 @@
+timestamp,level,service,message,request_id,endpoint,status_code,latency_ms
+2026-10-12 04:36:35,WARN,auth-service,Latency SLO breach on /api/v1/orders: p95 above target,req-4678d992,/api/v1/orders,200,4497
+2026-10-12 06:10:28,CRITICAL,database-service,"FATAL: out of memory, worker process terminated",req-395bbdf2,,,
+2026-10-12 06:32:58,INFO,auth-service,Service auth-service reports healthy status,req-86ada1bb,/health,200,19
+2026-10-12 07:31:12,INFO,payment-service,Request completed: GET /api/v1/cart returned 200 in 159ms,req-df5628eb,,200,159
+2026-10-12 08:02:42,ERROR,payment-service,"Charge failed for $723.87 on order ORD-94939, card authorization error",req-fdd67d25,/api/v1/payments/charge,500,2514
+2026-10-12 08:40:29,INFO,notification-service,Job token-cleanup finished in 236ms,req-b752f0f4,,,236
+2026-10-12 08:47:34,ERROR,auth-service,Login rejected: account user_4727 locked after repeated failed attempts,req-3b49c9fd,/api/v1/auth/login,401,389
+2026-10-12 09:22:05,WARN,payment-service,Response code outside expected set for /api/v1/orders,req-2d7a2672,/api/v1/orders,520,
+2026-10-12 09:26:21,WARN,api-gateway,High latency detected: /api/v1/products responded in 6726ms (threshold 1000ms),req-a2ff2ae7,/api/v1/products,200,6726
+2026-10-12 09:40:52,ERROR,api-gateway,Timeout waiting for response from shipping-service,req-a100f138,/api/v1/cart,408,24991
+2026-10-12 09:45:40,ERROR,payment-service,Unable to capture payment for order ORD-41850: payment gateway returned failure,req-ed13a32e,/api/v1/payments/charge,402,2560
+2026-10-12 09:46:00,INFO,database-service,Heartbeat received from database-service,req-bfe76817,,,
+2026-10-12 10:04:21,INFO,database-service,Keepalive ping acknowledged,req-21ff5feb,,,
+2026-10-12 10:04:21,INFO,database-service,Keepalive ping acknowledged,req-21ff5feb,,,
+2026-10-12 10:06:33,DEBUG,api-gateway,"Unknown message format on queue audit-stream, default handler used",req-0ca3348c,,,
+yesterday,INFO,auth-service,Liveness probe succeeded for auth-service,req-089b4339,/health,200,25
+not-a-timestamp,ERROR,database-service,"Cannot reach database db-replica, connection attempt failed",req-e8f84c35,,,
+2026-10-12 10:54:10,WARN,auth-service,Token validation failed for session sess_dd0d7089: signature mismatch,req-4fd8755f,/api/v1/auth/login,403,190
+2026-10-12 11:00:19,INFO,api-gateway,Health check OK,req-11688118,,200,22
+2026-10-12 11:04:59,INFO,database-service,Scheduled job report-rollup completed,req-0c8f191e,,,220
+2026-10-12 11:42:13,INFO,payment-service,POST /api/v1/cart handled successfully,req-6ee0a1fa,/api/v1/cart,200,150
+2026-10-12 12:25:57,DEBUG,payment-service,Node heartbeat acknowledged by scheduler,req-8eca91c2,,,
+2026-10-12 12:57:05,CRITICAL,database-service,Connection pool exhausted: unable to acquire connection to db-replica,req-d8b81440,,503,
+2026-10-12 13:28:06,ERROR,database-service,"Cannot reach database db-replica, connection attempt failed",req-f1a0bf89,,503,
+2026-10-12 15:03:44,INFO,payment-service,Request completed: POST /api/v1/products returned 200 in 70ms,req-6872ba4a,/api/v1/products,200,70
+2026-10-12 15:22:59,INFO,payment-service,Response sent to client for /api/v1/products with 200,req-c41c76a7,/api/v1/products,200,38
+2026-10-12 15:54:10,INFO,auth-service,GET /api/v1/products handled successfully,req-7979c9de,/api/v1/products,200,82
+2026-10-12 17:02:42,INFO,notification-service,Job token-cleanup finished in 589ms,req-d7de82f8,,,589
+2026-10-12 17:05:02,ERROR,notification-service,"FATAL: out of memory, worker process terminated",req-43990e8a,,500,
+2026-10-12 17:25:04,INFO,api-gateway,Health check passed: api-gateway responded 200 in 16ms,req-c41754cb,/health,200,16
+2026-10-12 17:41:54,INFO,payment-service,Health check OK,req-16800276,/health,200,45
+2026-10-12 18:43:46,ERROR,payment-service,Transaction TXN-78139880 declined by issuer (insufficient funds),req-c5420bbf,/api/v1/payments/charge,500,2416
+2026-10-13 01:32:54,INFO,payment-service,Successfully processed GET /api/v1/cart (status 200),req-d173f03a,/api/v1/cart,200,42
+2026-10-13 04:03:18,INFO,auth-service,Session created for user user_5792,req-0a064dad,/api/v1/auth/session,201,144
+2026-10-13 07:09:36,INFO,payment-service,"Periodic ping completed, service payment-service alive",req-e9148566,,,
+2026-10-13 07:10:40,INFO,payment-service,Node heartbeat acknowledged by scheduler,req-71c7e4a6,,,
+2026-10-13 07:12:26,DEBUG,notification-service,Heartbeat sent to cluster coordinator,req-44309d25,,,
+2026-10-13 07:50:08,CRITICAL,database-service,"FATAL: out of memory, worker process terminated",req-085c8914,,500,
+2026-10-13 08:12:00,WARN,payment-service,Downstream replied with an unusual code on /api/v1/cart,req-077c973a,/api/v1/cart,599,661
+2026-10-13 08:17:39,ERROR,api-gateway,Upstream timeout after 24932ms calling pricing-service,req-69486c1a,/api/v1/products,408,24932
+2026-10-13 08:35:25,INFO,auth-service,New session sess_d53868b5 established,req-89ee8fd6,/api/v1/auth/session,201,
+2026-10-13 08:36:53,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-5c2fb8f0,/health,200,21
+2026-10-13 08:52:16,INFO,database-service,Background task token-cleanup ran to completion,req-1b458c56,,,757
+2026-10-13 09:09:04,CRITICAL,database-service,"Cannot reach database db-primary, connection attempt failed",req-88b8ae99,,,
+2026-10-13 09:47:26,WARN,database-service,Request routed through fallback path,req-e1906392,,,353
+2026-10-13 09:47:35,ERROR,payment-service,Unable to capture payment for order ORD-99192: payment gateway returned failure,req-e63f8101,/api/v1/payments/charge,500,735
+2026-10-13 09:47:35,ERROR,payment-service,Unable to capture payment for order ORD-99192: payment gateway returned failure,req-e63f8101,/api/v1/payments/charge,500,735
+2026-10-13 10:13:48,ERROR,payment-service,,req-6554071e,/api/v1/payments/charge,402,1881
+2026-10-13 10:23:44,INFO,database-service,Liveness probe succeeded for database-service,req-6262abaf,/health,200,17
+2026-10-13 11:01:20,INFO,payment-service,Keepalive ping acknowledged,req-ec0f8cff,,,
+2026-10-13 11:10:58,INFO,payment-service,GET /api/v1/orders handled successfully,req-03f3081b,/api/v1/orders,201,265
+2026-10-13 11:34:49,WARN,payment-service,Unable to capture payment for order ORD-21226: payment gateway returned failure,req-9715fc33,/api/v1/payments/charge,402,776
+2026-10-13 11:44:13,WARN,api-gateway,Response code outside expected set for /api/v1/cart,req-9f81b9cb,/api/v1/cart,599,559
+2026-10-13 12:04:12,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-117515c7,/health,200,22
+2026-10-13 12:06:03,WARN,payment-service,High latency detected: /api/v1/orders responded in 3691ms (threshold 1000ms),req-d6fedeb3,/api/v1/orders,200,3691
+2026-10-13 12:06:03,WARN,payment-service,High latency detected: /api/v1/orders responded in 3691ms (threshold 1000ms),req-d6fedeb3,/api/v1/orders,200,3691
+2026-10-13 12:51:05,INFO,notification-service,"report-rollup job completed, next run scheduled",req-6208c248,,,405
+2026-10-13 12:53:17,INFO,auth-service,Keepalive ping acknowledged,req-ca158f98,,,
+2026-10-13 12:57:38,INFO,api-gateway,Response sent to client for /api/v1/cart with 200,req-eca85083,/api/v1/cart,200,62
+2026-10-13 13:11:42,WARN,notification-service,"Unexpected event type invoice.sync encountered, skipping enrichment",req-d1951746,,,
+2026-10-13 13:20:54,WARN,api-gateway,High latency detected: /api/v1/products responded in 6191ms (threshold 1000ms),req-ab7e7026,/api/v1/products,200,6191
+2026-10-13 13:20:54,WARN,api-gateway,High latency detected: /api/v1/products responded in 6191ms (threshold 1000ms),req-ab7e7026,/api/v1/products,200,6191
+2026-10-13 13:48:30,INFO,payment-service,Service payment-service reports healthy status,req-01400c8a,/health,200,25
+2026-10-13 13:53:51,DEBUG,database-service,"Periodic ping completed, service database-service alive",req-82009075,,,
+2026-10-13 14:16:42,INFO,database-service,"Readiness check ok, all dependencies reachable",req-c1f768eb,/health,200,10
+2026-10-13 14:40:42,INFO,payment-service,"Readiness check ok, all dependencies reachable",req-be76034b,/health,200,27
+2026-10-13 15:15:11,WARN,auth-service,Login rejected: account user_5334 locked after repeated failed attempts,req-07943bb7,/api/v1/auth/login,401,155
+2026-10-13 15:22:14,INFO,payment-service,Successfully processed POST /api/v1/products (status 200),req-6e59710a,/api/v1/products,200,186
+2026-10-13 15:39:36,ERROR,payment-service,Payment processing failed: gateway rejected transaction TXN-98429450,req-43c957a8,/api/v1/payments/charge,500,1702
+2026-10-13 15:51:12,ERROR,payment-service,"Charge failed for $414.31 on order ORD-29342, card authorization error",req-37d16a3b,,402,1112
+2026-10-13 16:12:08,ERROR,api-gateway,"Upstream inventory-service failed to respond within 15705 ms, returning 504",req-8ed4d7cb,/api/v1/cart,408,15705
+2026-10-13 16:14:08,ERROR,payment-service,Payment declined for order ORD-38893: issuer response code 91,req-901398bb,/api/v1/payments/charge,402,
+2026-10-13 16:18:43,INFO,api-gateway,Request completed: POST /api/v1/orders returned 200 in 151ms,req-b4c0d1db,/api/v1/orders,200,151
+2026-10-13 16:36:54,DEBUG,database-service,Node heartbeat acknowledged by scheduler,req-5dd29cbe,,,
+2026-10-13 16:43:34,INFO,payment-service,Served POST request for /api/v1/orders,req-ea8dde21,/api/v1/orders,200,190
+2026-10-13 16:56:26,ERROR,api-gateway,Timeout waiting for response from shipping-service,req-9f4b3735,/api/v1/products,408,24245
+2026-10-13 16:56:26,ERROR,api-gateway,Timeout waiting for response from shipping-service,req-9f4b3735,/api/v1/products,408,24245
+2026-10-13 17:08:12,INFO,api-gateway,Health check passed: api-gateway responded 200 in 5ms,req-af19e1f3,/health,200,5
+2026-10-13 18:08:34,ERROR,api-gateway,Gateway timeout on /api/v1/orders: pricing-service did not respond,req-1d25c904,/api/v1/orders,504,14085
+2026-10-13 19:14:29,ERROR,api-gateway,Upstream timeout after 21307ms calling shipping-service,req-40cea275,/api/v1/products,504,21307
+2026-10-13 20:22:33,ERROR,payment-service,Uncaught TypeError while serializing response payload,req-4a824882,,,
+2026-10-13 20:52:28,ERROR,database-service,"Cannot reach database db-primary, connection attempt failed",req-66561351,,,
+2026-10-13 22:05:08,WARN,database-service,"Unexpected event type user.merge encountered, skipping enrichment",req-debe976d,,,
+2026-10-14 00:12:26,INFO,notification-service,"report-rollup job completed, next run scheduled",req-62b66463,,,865
+2026-10-14 03:50:28,INFO,api-gateway,Service api-gateway reports healthy status,req-86296c43,/health,200,22
+2026-10-14 03:56:26,WARN,payment-service,Unrecognized status code from downstream while serving /api/v1/products,req-7eee4c12,/api/v1/products,299,764
+2026-10-14 04:43:46,CRITICAL,database-service,Connection pool exhausted: unable to acquire connection to db-replica,req-9cc33fce,,503,
+2026-10-14 04:57:59,ERROR,payment-service,Payment processing failed: gateway rejected transaction TXN-41774346,req-e331ce69,/api/v1/payments/charge,500,672
+2026-10-14 07:28:15,INFO,auth-service,Response sent to client for /api/v1/products with 204,req-e30e6c14,/api/v1/products,204,19
+2026-10-14 07:51:15,INFO,notification-service,Job report-rollup finished in 883ms,req-3cb7062e,,,883
+2026-10-14 09:00:45,INFO,auth-service,Successfully processed GET /api/v1/orders (status 200),req-c99fa58b,/api/v1/orders,200,47
+2026-10-14 09:05:36,INFO,auth-service,User user_1612 logged in successfully,req-bbc2db9e,/api/v1/auth/session,200,69
+2026-10-14 09:16:12,INFO,notification-service,Request routed through fallback path,req-1fadfab1,,200,379
+2026-10-14 09:35:20,INFO,api-gateway,Feature flag new-checkout-flow evaluated to unexpected value,req-924e800e,,,
+2026-10-14 09:41:18,INFO,database-service,Scheduled job cache-refresh completed,req-a47d59f6,,,401
+2026-10-14 10:01:05,WARN,auth-service,Authentication failed for user user_8141: invalid credentials,req-fa40c7ae,/api/v1/auth/login,403,396
+2026-10-14 10:43:32,INFO,database-service,"token-cleanup job completed, next run scheduled",req-7197fdae,,,849
+2026-10-14 10:50:51,INFO,notification-service,Scheduled job cache-refresh completed,req-7c5df0c1,,,272
+2026-10-14 11:34:29,WARN,auth-service,Token validation failed for session sess_46ed8bce: signature mismatch,req-d6cf0e97,/api/v1/auth/login,401,52
+2026-10-14 11:46:07,INFO,payment-service,Response sent to client for /api/v1/products with 200,req-79a63292,/api/v1/products,200,132
+2026-10-14 12:12:23,DEBUG,auth-service,"Token issued for user user_8786, expires in 3600s",req-f360c963,/api/v1/auth/session,200,74
+2026-10-14 12:42:55,INFO,api-gateway,Liveness probe succeeded for api-gateway,req-9995d9db,/health,200,14
+2026-10-14 12:49:52,INFO,api-gateway,Non-standard response returned for /api/v1/orders,req-69082d7b,/api/v1/orders,299,318
+2026-10-14 12:59:40,ERROR,payment-service,Transaction TXN-38538251 declined by issuer (insufficient funds),req-adc30543,/api/v1/payments/charge,402,819
+2026-10-14 13:00:19,DEBUG,auth-service,Session created for user user_2544,req-d0db488e,/api/v1/auth/session,201,14
+2026-10-14 13:45:36,INFO,database-service,Liveness probe succeeded for database-service,req-75795419,/health,200,19
+2026-10-14 14:14:40,ERROR,api-gateway,Request to inventory-service timed out while handling /api/v1/cart,req-abadaea4,/api/v1/cart,408,12540
+2026-10-14 14:18:29,WARN,auth-service,High latency detected: /api/v1/products responded in 6152ms (threshold 1000ms),req-8e284c5b,/api/v1/products,200,6152
+2026-10-14 14:21:52,INFO,notification-service,"Unexpected event type invoice.sync encountered, skipping enrichment",req-1ec91cb1,,,
+2026-10-14 14:32:04,CRITICAL,database-service,Failed to connect to database primary db-replica: connection timed out,req-054af196,,503,
+2026-10-14 14:54:16,INFO,payment-service,Feature flag new-checkout-flow evaluated to unexpected value,req-9eba52c3,,,
+2026-10-14 15:18:29,WARN,payment-service,Deprecated API version v1 invoked by client,req-ae46ec52,,abc,133
+2026-10-14 15:26:59,WARN,api-gateway,"Unexpected event type user.merge encountered, skipping enrichment",req-00759f1b,,,
+2026-10-14 15:41:26,INFO,payment-service,Heartbeat sent to cluster coordinator,req-722c39fb,,,
+2026-10-14 16:34:27,ERROR,auth-service,Token validation failed for session sess_6bf4c876: signature mismatch,req-85dd1fad,/api/v1/auth/login,401,309
+2026-10-14 16:50:04,CRITICAL,database-service,Failed to connect to database primary db-replica: connection timed out,req-cb508d2c,,503,
+2026-10-14 16:50:59,ERROR,payment-service,Transaction TXN-40547349 declined by issuer (insufficient funds),req-4c1dd3d7,/api/v1/payments/charge,402,884
+2026-10-14 16:59:29,INFO,api-gateway,Response sent to client for /api/v1/orders with 201,req-3613d862,/api/v1/orders,201,100
+2026-10-14 17:02:18,WARN,api-gateway,Response time of 7832 ms exceeded warning threshold for /api/v1/orders,req-574738eb,/api/v1/orders,200,7832
+2026-10-14 17:05:15,VERBOSE,auth-service,Authentication failed for user user_1986: invalid credentials,req-9c3877df,/api/v1/auth/login,401,96
+2026-10-14 17:05:15,WARN,auth-service,Authentication failed for user user_1986: invalid credentials,req-9c3877df,/api/v1/auth/login,401,96
+2026-10-14 17:09:05,INFO,api-gateway,Liveness probe succeeded for api-gateway,req-604d2fd8,/health,200,15
+2026-10-14 17:41:37,INFO,auth-service,Retrying operation after transient condition,,,200,293
+2026-10-14 21:11:28,INFO,auth-service,Client approaching rate limit threshold,req-9272c3ae,,,284
+2026-10-14 21:28:51,INFO,payment-service,GET /api/v1/orders handled successfully,req-9e8d85b8,/api/v1/orders,201,218
+2026-10-14 21:35:19,WARN,payment-service,Latency SLO breach on /api/v1/cart: p95 above target,req-cbb778eb,/api/v1/cart,200,3075
+2026-10-15 00:01:14,INFO,payment-service,Health check OK,req-f0adb183,/health,200,11
+2026-10-15 02:32:29,WARN,api-gateway,Slow response of 5574ms for /api/v1/orders,req-9049da40,/api/v1/orders,200,5574
+2026-10-15 04:42:12,INFO,database-service,Request routed through fallback path,req-ea51ab23,,,587
+2026-10-15 05:10:33,WARN,auth-service,/api/v1/cart is responding slowly (7409ms),req-c6d39b37,/api/v1/cart,200,7409
+2026-10-15 06:05:46,INFO,payment-service,"Readiness check ok, all dependencies reachable",req-5e2cc2f2,/health,200,32
+2026-10-15 07:03:10,DEBUG,database-service,Heartbeat received from database-service,req-d60a2324,,,
+2026-10-15 07:03:10,DEBUG,database-service,Heartbeat received from database-service,req-d60a2324,,,
+2026-10-15 07:18:50,INFO,auth-service,New session sess_73698f83 established,req-57b8466b,/api/v1/auth/session,201,139
+2026-10-15 08:49:14,INFO,payment-service,Scheduled job report-rollup completed,req-4e63bc91,,,485
+2026-10-15 09:14:54,ERROR,auth-service,Token validation failed for session sess_2f51d1e0: signature mismatch,req-57e6fca2,/api/v1/auth/login,401,377
+2026-10-15 09:36:39,ERROR,auth-service,Authentication failed for user user_1166: invalid credentials,req-0d23c5eb,/api/v1/auth/login,403,250
+2026-10-15 10:41:50,CRITICAL,database-service,Too many connections: db-replica refusing new client sessions,req-adba8a65,,,
+2026-10-15 10:42:08,INFO,auth-service,User user_8359 logged in successfully,req-8ada6964,/api/v1/auth/session,200,48
+2026-10-15 10:47:41,INFO,payment-service,Request completed: POST /api/v1/orders returned 204 in 243ms,req-68019948,/api/v1/orders,204,243
+2026-10-15 10:53:34,ERROR,payment-service,Payment declined for order ORD-45697: issuer response code 54,req-a8e1e4eb,/api/v1/payments/charge,402,1663
+2026-10-15 11:01:11,INFO,auth-service,Unmapped HTTP status observed for /api/v1/orders,req-ee15ab2b,/api/v1/orders,299,422
+2026-10-15 11:49:43,INFO,notification-service,Service notification-service reports healthy status,req-2f74e1db,/health,200,30
+2026-10-15 11:55:46,ERROR,payment-service,Payment declined for order ORD-42742: issuer response code 05,req-0bc13822,/api/v1/payments/charge,500,1601
+2026-10-15 11:56:15,INFO,payment-service,Response code outside expected set for /api/v1/cart,req-341cce70,/api/v1/cart,418,298
+2026-10-15 12:09:41,WARN,payment-service,Cache miss ratio above expected range,req-a4be98f7,,200,815
+2026-10-15 12:58:09,INFO,payment-service,Health check passed: payment-service responded 200 in 4ms,req-8eb656b4,/health,200,4
+2026-10-15 13:10:52,CRITICAL,database-service,Failed to connect to database primary db-primary: connection timed out,req-d075eb81,,503,
+2026-10-15 13:10:52,CRITICAL,database-service,Failed to connect to database primary db-primary: connection timed out,req-d075eb81,,503,
+2026-10-15 13:53:37,INFO,auth-service,Successfully processed POST /api/v1/cart (status 200),req-ceb2d1a9,/api/v1/cart,200,39
+2026-10-15 13:58:14,INFO,payment-service,Successfully processed POST /api/v1/products (status 201),req-d5ce0e73,/api/v1/products,201,54
+2026-10-15 14:32:14,ERROR,api-gateway,"Upstream pricing-service failed to respond within 21817 ms, returning 504",req-bea4a0fd,/api/v1/cart,408,21817
+2026-10-15 14:33:46,WARN,payment-service,Unmapped HTTP status observed for /api/v1/products,req-ce34317c,/api/v1/products,599,152
+2026-10-15 14:55:13,INFO,payment-service,Health check OK,req-21b56c3a,/health,200,28
+2026-10-15 15:23:22,INFO,auth-service,Access token refreshed for user_4825,req-904f9f72,/api/v1/auth/session,200,38
+2026-10-15 15:24:27,WARN,auth-service,"Unexpected event type order.reconcile encountered, skipping enrichment",req-736ed2fa,,,
+2026-10-15 15:33:42,ERROR,api-gateway,Upstream timeout after 27223ms calling shipping-service,req-69043245,/api/v1/orders,408,27223
+2026-10-15 16:10:46,INFO,auth-service,Liveness probe succeeded for auth-service,req-282eff8d,/health,200,43
+2026-10-15 16:17:48,ERROR,auth-service,Failed login attempt from 10.15.126.52 for account user_1333,req-4108f5ac,/api/v1/auth/login,403,192
+2026-10-15 16:21:11,CRITICAL,database-service,Unhandled exception in OrderProcessor.process: NullPointerException,req-5c4166f2,,,
+2026-10-15 16:49:24,INFO,database-service,"Unknown message format on queue audit-stream, default handler used",req-b29d04d0,,,
+2026-10-15 16:54:51,ERROR,api-gateway,Timeout waiting for response from inventory-service,req-c087aa9d,/api/v1/cart,504,27161
+2026-10-15 18:11:57,ERROR,payment-service,"Service crashed with segmentation fault, restarting worker",req-cffab844,,500,
+2026-10-15 18:16:48,WARN,auth-service,Login rejected: account user_3267 locked after repeated failed attempts,req-c8a41445,/api/v1/auth/login,401,400
+2026-10-15 18:26:59,DEBUG,auth-service,Session created for user user_6354,req-bdeaa085,/api/v1/auth/session,201,99
+2026-10-15 19:45:28,INFO,auth-service,New session sess_87d87c8b established,req-325b4de8,/api/v1/auth/session,200,74
+2026-10-15 20:05:04,INFO,notification-service,Background task token-cleanup ran to completion,req-106f98b9,,,532
+2026-10-15 20:08:12,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-87a6d710,/health,200,24
+2026-10-15 22:12:52,DEBUG,notification-service,Node heartbeat acknowledged by scheduler,req-4ee16654,,,
+2026-10-15 23:28:55,INFO,database-service,Health check passed: database-service responded 200 in 25ms,req-6aa8a528,/health,200,
+2026-10-16 01:43:21,WARN,payment-service,Response code outside expected set for /api/v1/orders,req-12d56829,/api/v1/orders,520,568
+2026-10-16 02:02:15,WARN,auth-service,Request routed through fallback path,req-0aed19d1,,200,689
+2026-10-16 02:45:58,INFO,payment-service,Keepalive ping acknowledged,req-ddf5f614,,,
+2026-10-16 03:32:33,INFO,database-service,"report-rollup job completed, next run scheduled",req-20302fc5,,,249
+2026-10-16 06:30:32,WARN,payment-service,Unable to capture payment for order ORD-85880: payment gateway returned failure,req-08d11d6f,/api/v1/payments/charge,402,1434
+2026-10-16 07:12:12,INFO,payment-service,Successfully processed GET /api/v1/orders (status 200),req-3d35c0aa,/api/v1/orders,200,224
+2026-10-16 08:16:58,INFO,auth-service,"Payload schema mismatch on queue billing-events, applying defaults",req-bace7075,,,
+2026-10-16 08:32:25,WARN,api-gateway,Response time of 7684 ms exceeded warning threshold for /api/v1/cart,req-0bc82e2e,/api/v1/cart,200,7684
+2026-10-16 08:43:50,CRITICAL,auth-service,"FATAL: out of memory, worker process terminated",req-1c5699af,,500,
+2026-10-16 08:44:56,DEBUG,api-gateway,Node heartbeat acknowledged by scheduler,req-3924b2bf,,,
+2026-10-16 08:53:16,INFO,api-gateway,Response sent to client for /api/v1/products with 200,req-a90cf8a1,/api/v1/products,200,97
+2026-10-16 09:02:08,INFO,notification-service,Deprecated API version v1 invoked by client,req-62e10eb9,,,469
+2026-10-16 09:06:20,INFO,notification-service,Scheduled job report-rollup completed,req-244f5266,,,740
+2026-10-16 09:25:33,CRITICAL,database-service,Database connection refused by host db-primary,req-b3c1a83c,,,
+2026-10-16 09:59:09,DEBUG,auth-service,Session created for user user_9991,req-0b170383,/api/v1/auth/session,200,23
+2026-10-16 10:10:20,INFO,api-gateway,Service api-gateway reports healthy status,req-44dfa1fc,/health,200,36
+2026-10-16 10:24:51,INFO,database-service,Liveness probe succeeded for database-service,req-5ddf25f3,/health,200,27
+2026-10-16 11:25:43,WARN,payment-service,"Charge failed for $451.77 on order ORD-77033, card authorization error",req-f1f2f416,/api/v1/payments/charge,402,1293
+2026-10-16 11:28:11,DEBUG,database-service,Heartbeat received from database-service,req-952ebb46,,,
+2026-10-16 12:34:05,INFO,auth-service,New session sess_54ff4046 established,req-8b0e47b0,/api/v1/auth/session,200,90
+2026-10-16 13:12:47,INFO,payment-service,Health check passed: payment-service responded 200 in 15ms,req-cc363a1e,/health,200,15
+2026-10-16 13:30:03,INFO,database-service,Heartbeat sent to cluster coordinator,req-23e8accf,,,
+2026-10-16 14:15:45,CRITICAL,database-service,Too many connections: db-replica refusing new client sessions,req-0592a85f,,,
+2026-10-16 14:28:26,INFO,auth-service,Request routed through fallback path,req-9027fac5,,,166
+2026-10-16 14:47:46,WARN,api-gateway,High latency detected: /api/v1/products responded in 6843ms (threshold 1000ms),req-e2e2ef67,/api/v1/products,200,6843
+2026-10-16 14:52:52,INFO,api-gateway,Unrecognized status code from downstream while serving /api/v1/orders,req-2a0dad4e,/api/v1/orders,520,304
+2026-10-16 15:10:16,ERROR,payment-service,Unable to capture payment for order ORD-25860: payment gateway returned failure,req-fecbb6a5,/api/v1/payments/charge,402,
+2026-10-16 15:36:50,WARN,payment-service,Response code outside expected set for /api/v1/products,req-b50c5edc,/api/v1/products,520,696
+2026-10-16 15:39:44,INFO,auth-service,Session created for user user_6913,req-591e37e1,/api/v1/auth/session,200,109
+2026-10-16 15:47:19,DEBUG,notification-service,"Unknown message format on queue billing-events, default handler used",req-4a99a4b0,,,
+2026-10-16 16:19:49,INFO,payment-service,Webhook received with unrecognized event type user.merge,req-dfa2b7b8,,,
+2026-10-16 16:23:26,WARN,payment-service,Response time of 5227 ms exceeded warning threshold for /api/v1/products,req-ccdca9c8,/api/v1/products,200,5227
+2026-10-16 17:16:44,INFO,notification-service,"report-rollup job completed, next run scheduled",req-9ccf7790,,,600
+2026-10-16 17:22:04,INFO,payment-service,Response sent to client for /api/v1/orders with 201,req-8f8c2865,/api/v1/orders,201,266
+2026-10-16 17:39:10,INFO,payment-service,Unmapped HTTP status observed for /api/v1/orders,req-025dd22c,/api/v1/orders,460,764
+2026-10-16 19:14:40,INFO,database-service,Heartbeat sent to cluster coordinator,req-2b3f2e1b,,,
+2026-10-16 20:38:34,WARN,auth-service,Unmapped HTTP status observed for /api/v1/products,req-c87d0f86,/api/v1/products,460,646
+2026-10-16 21:34:00,INFO,notification-service,Job cache-refresh finished in 472ms,req-31ad1e75,,,472
+2026-10-16 21:36:40,INFO,auth-service,Served POST request for /api/v1/cart,req-bdf39773,/api/v1/cart,200,279
+2026-10-16 22:00:39,DEBUG,database-service,"Unexpected event type user.merge encountered, skipping enrichment",req-dd0ef08f,,,
+2026-10-16 22:14:29,WARN,auth-service,Retrying operation after transient condition,req-43caf72a,,200,799
+2026-10-16 22:18:44,ERROR,auth-service,Login rejected: account user_2070 locked after repeated failed attempts,req-10475f4d,/api/v1/auth/login,403,43
+2026-10-17 02:21:02,INFO,api-gateway,Successfully processed GET /api/v1/cart (status 200),req-241de676,/api/v1/cart,200,
+2026-10-17 04:12:20,INFO,api-gateway,Served GET request for /api/v1/cart,req-2f801acd,/api/v1/cart,204,264
+2026-10-17 07:15:06,INFO,api-gateway,Successfully processed GET /api/v1/cart (status 201),req-e5794995,/api/v1/cart,201,197
+2026-10-17 07:36:03,INFO,payment-service,Deprecated API version v1 invoked by client,req-d725e9ca,,,363
+2026-10-17 07:44:28,INFO,api-gateway,"Readiness check ok, all dependencies reachable",req-0b051ceb,/health,200,32
+2026-10-17 08:04:11,INFO,auth-service,GET /api/v1/products handled successfully,req-86682945,/api/v1/products,201,244
+2026-10-17 08:21:56,INFO,payment-service,Successfully processed GET /api/v1/products (status 201),req-54829dd2,/api/v1/products,201,199
+2026-10-17 08:37:16,INFO,database-service,Job token-cleanup finished in 159ms,req-654ac6c7,,,159
+2026-10-17 09:09:00,INFO,database-service,"Readiness check ok, all dependencies reachable",,/health,200,42
+2026-10-17 09:12:48,INFO,api-gateway,Downstream replied with an unusual code on /api/v1/orders,req-efd75736,/api/v1/orders,599,442
+2026-10-17 09:20:15,ERROR,payment-service,Unable to capture payment for order ORD-80468: payment gateway returned failure,req-a45c17ff,/api/v1/payments/charge,500,1218
+2026-10-17 10:25:41,WARN,auth-service,Authentication failed for user user_4846: invalid credentials,req-dd65bcd0,/api/v1/auth/login,403,155
+2026-10-17 10:28:49,DEBUG,api-gateway,Heartbeat sent to cluster coordinator,req-b917e678,,,
+2026-10-17 10:28:49,DEBUG,api-gateway,Heartbeat sent to cluster coordinator,req-b917e678,,,
+2026-10-17 11:02:27,ERROR,api-gateway,Gateway timeout on /api/v1/products: shipping-service did not respond,req-d99b6105,/api/v1/products,408,7361
+2026-10-17 11:06:20,ERROR,api-gateway,"Upstream pricing-service failed to respond within 19860 ms, returning 504",req-52e1d11b,/api/v1/orders,408,19860
+2026-10-17 11:10:03,INFO,api-gateway,Liveness probe succeeded for api-gateway,,/health,200,7
+2026-10-17 11:17:15,ERROR,payment-service,Critical exception: IndexOutOfBoundsException thrown in InvoiceBuilder.render,req-b768447f,,,
+2026-10-17 11:20:49,ERROR,api-gateway,"Upstream shipping-service failed to respond within 10157 ms, returning 504",req-e2c01769,/api/v1/cart,408,10157
+2026-10-17 11:24:30,INFO,notification-service,"Payload schema mismatch on queue audit-stream, applying defaults",req-d0e7afa0,,,
+2026-10-17 11:50:06,INFO,payment-service,"Payload schema mismatch on queue billing-events, applying defaults",req-c86698f6,,,
+2026-10-17 11:52:49,INFO,notification-service,Retrying operation after transient condition,req-8f540fa5,,,23
+2026-10-17 12:27:10,ERROR,api-gateway,Uncaught TypeError while serializing response payload,req-7be96ac0,,,
+2026-10-17 12:31:07,WARN,auth-service,Token validation failed for session sess_7b84df38: signature mismatch,req-b4063d1f,/api/v1/auth/login,401,167
+2026-10-17 12:33:52,INFO,auth-service,Request completed: GET /api/v1/orders returned 201 in 126ms,req-18ad5a94,/api/v1/orders,201,126
+2026-10-17 12:34:27,INFO,auth-service,Health check OK,req-354eb1c6,/health,200,21
+2026-10-17 13:04:53,INFO,auth-service,User user_7802 logged in successfully,req-f1b8383a,/api/v1/auth/session,200,78
+2026-10-17 13:09:58,WARN,auth-service,Login rejected: account user_5460 locked after repeated failed attempts,req-124b941b,/api/v1/auth/login,403,78
+2026-10-17 13:15:54,INFO,auth-service,Request completed: GET /api/v1/products returned 204 in 201ms,req-ac2299d2,/api/v1/products,204,201
+2026-10-17 13:20:45,INFO,payment-service,GET /api/v1/cart handled successfully,req-89fbae8e,,200,272
+2026-10-17 13:24:10,INFO,api-gateway,Health check passed: api-gateway responded 200 in 38ms,req-42244c5f,/health,200,38
+2026-10-17 13:39:21,DEBUG,auth-service,User user_8187 logged in successfully,req-0abc23fc,,200,50
+2026-10-17 14:42:04,WARN,notification-service,"Unknown message format on queue audit-stream, default handler used",req-c405c787,,,
+2026-10-17 14:44:25,INFO,api-gateway,Node heartbeat acknowledged by scheduler,req-b07455c4,,,
+2026-10-17 14:57:25,WARN,auth-service,Latency SLO breach on /api/v1/cart: p95 above target,req-561f7e06,/api/v1/cart,200,2937
+2026-10-17 15:08:54,INFO,payment-service,Cron task cache-refresh executed successfully,req-b7b23658,,,842
+2026-10-17 15:15:03,WARN,payment-service,/api/v1/cart is responding slowly (3642ms),req-468eb41e,/api/v1/cart,200,3642
+2026-10-17 15:19:12,INFO,api-gateway,GET /api/v1/cart handled successfully,req-ecc9aaba,/api/v1/cart,201,148
+2026-10-17 15:46:15,INFO,payment-service,Response sent to client for /api/v1/products with 200,req-418410f7,/api/v1/products,200,24
+2026-10-17 15:47:11,INFO,auth-service,"Readiness check ok, all dependencies reachable",req-b2f8cb22,/health,200,21
+2026-10-17 16:04:11,ERROR,database-service,Connection pool exhausted: unable to acquire connection to db-primary,req-799aeaf5,,,
+2026-10-17 16:30:41,ERROR,auth-service,"Access denied for user user_6419, JWT expired",req-c13b4978,/api/v1/auth/login,403,304
+2026-10-17 16:34:52,INFO,auth-service,Access token refreshed for user_3926,req-c24651a0,/api/v1/auth/session,200,92
+2026-10-17 16:42:22,INFO,notification-service,Service notification-service reports healthy status,req-0fa6cf60,/health,200,8
+2026-10-17 16:55:06,WARN,auth-service,Authentication failed for user user_3785: invalid credentials,req-e0c45289,/api/v1/auth/login,403,70
+2026-10-17 17:13:37,WARN,payment-service,High latency detected: /api/v1/orders responded in 3584ms (threshold 1000ms),req-51fe1e06,/api/v1/orders,200,3584
+2026-10-17 17:21:04,CRITICAL,database-service,Too many connections: db-replica refusing new client sessions,req-4baed592,,,
+2026-10-17 17:27:51,INFO,auth-service,Liveness probe succeeded for auth-service,req-11238d46,/health,200,34
+2026-10-17 17:30:58,INFO,api-gateway,Unrecognized status code from downstream while serving /api/v1/products,req-a7ae85c6,/api/v1/products,299,358
+2026-10-17 18:03:45,WARN,api-gateway,/api/v1/products is responding slowly (8650ms),req-8f76f788,/api/v1/products,200,8650
+2026-10-17 18:33:14,INFO,api-gateway,"Readiness check ok, all dependencies reachable",req-0feea67f,/health,200,21
+2026-10-17 18:41:10,INFO,payment-service,Request completed: POST /api/v1/cart returned 200 in 19ms,req-f4b55167,/api/v1/cart,200,19
+2026-10-17 19:38:45,INFO,auth-service,Health check OK,req-8c685487,/health,200,32
+2026-10-17 22:04:28,CRITICAL,notification-service,Unhandled exception in OrderProcessor.process: NullPointerException,req-5eca2f6e,,500,
+2026-10-17 22:15:24,DEBUG,auth-service,Session created for user user_6293,req-3f3b1a36,/api/v1/auth/session,200,41
+2026-10-18 00:54:46,INFO,database-service,"Readiness check ok, all dependencies reachable",req-abdc6fd7,/health,200,39
+2026-10-18 07:08:56,WARN,payment-service,"Unexpected event type invoice.sync encountered, skipping enrichment",req-ca74973e,,,
+2026-10-18 08:33:56,INFO,auth-service,Keepalive ping acknowledged,req-3dd37eb4,,,
+2026-10-18 08:58:32,INFO,payment-service,"report-rollup job completed, next run scheduled",req-c286f05d,,,552
+2026-10-18 09:10:36,INFO,payment-service,Request completed: GET /api/v1/products returned 204 in 155ms,req-cc266670,/api/v1/products,204,155
+2026-10-18 09:44:33,WARN,auth-service,Authentication failed for user user_9270: invalid credentials,req-e127885c,/api/v1/auth/login,401,237
+2026-10-18 09:44:56,INFO,api-gateway,Service api-gateway reports healthy status,req-01ee90e5,/health,200,16
+2026-10-18 09:52:05,INFO,payment-service,Liveness probe succeeded for payment-service,req-c3c95ba2,/health,200,30
+2026-10-18 10:32:34,WARN,auth-service,/api/v1/products is responding slowly (6363ms),req-4d5af9cb,/api/v1/products,200,6363
+2026-10-18 10:35:58,INFO,notification-service,Scheduled job token-cleanup completed,req-f493e946,,,612
+2026-10-18 10:39:38,INFO,auth-service,Request completed: POST /api/v1/products returned 200 in 247ms,req-571a05ac,/api/v1/products,200,247
+2026-10-18 10:47:43,INFO,payment-service,Retrying operation after transient condition,req-f92dcc95,,,456
+2026-10-18 10:55:46,INFO,api-gateway,Response sent to client for /api/v1/products with 201,req-881098f4,/api/v1/products,201,88
+2026-10-18 11:34:30,INFO,auth-service,Service auth-service reports healthy status,req-4bce8f82,/health,200,21
+2026-10-18 11:40:13,INFO,api-gateway,Downstream replied with an unusual code on /api/v1/cart,req-b4148c15,/api/v1/cart,418,
+2026-10-18 11:43:20,INFO,api-gateway,Served GET request for /api/v1/products,req-049cddeb,/api/v1/products,200,210
+2026-10-18 11:50:25,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-3f2c0bf3,/health,200,22
+2026-10-18 11:54:09,INFO,api-gateway,Response sent to client for /api/v1/cart with 204,req-5fef2d21,/api/v1/cart,204,167
+2026-10-18 13:12:03,INFO,notification-service,"Readiness check ok, all dependencies reachable",req-9d3cb87d,/health,200,7
+2026-10-18 13:34:43,ERROR,payment-service,Payment declined for order ORD-97410: issuer response code 91,req-51a55db4,/api/v1/payments/charge,500,156
+2026-10-18 14:29:17,INFO,database-service,Client approaching rate limit threshold,req-b359e929,,200,241
+2026-10-18 14:37:37,INFO,auth-service,Request completed: POST /api/v1/products returned 200 in 274ms,req-304e8a26,/api/v1/products,200,274
+2026-10-18 14:37:37,INFO,auth-service,Request completed: POST /api/v1/products returned 200 in 274ms,req-304e8a26,/api/v1/products,200,274
+2026-10-18 15:03:15,INFO,database-service,Liveness probe succeeded for database-service,req-78cc2f3e,/health,200,40
+2026-10-18 15:15:48,INFO,database-service,Health check OK,req-79467ae1,/health,200,11
+2026-10-18 15:23:10,ERROR,auth-service,Authentication failed for user user_2245: invalid credentials,req-c249e9e6,/api/v1/auth/login,401,258
+2026-10-18 15:25:46,WARN,auth-service,"Access denied for user user_3977, JWT expired",req-ef8e9a16,/api/v1/auth/login,403,192
+2026-10-18 16:16:13,INFO,payment-service,Background task report-rollup ran to completion,req-d5c11f70,,,290
+2026-10-18 16:26:21,ERROR,auth-service,Login rejected: account user_6446 locked after repeated failed attempts,req-d449f728,/api/v1/auth/login,401,161
+2026-10-18 16:31:35,INFO,notification-service,Health check OK,req-1cd5d0b8,/health,200,38
+2026-10-18 17:08:19,WARN,auth-service,Non-standard response returned for /api/v1/products,req-e6eca921,/api/v1/products,520,720
+2026-10-18 17:29:02,INFO,payment-service,Deprecated API version v1 invoked by client,req-e2c71eb9,,200,651
+2026-10-18 18:27:55,ERROR,api-gateway,Upstream timeout after 16586ms calling shipping-service,req-f9593a31,/api/v1/products,408,16586
+2026-10-18 19:03:02,INFO,database-service,Service database-service reports healthy status,req-0e27f6fe,/health,200,23
+2026-10-18 19:03:05,ERROR,payment-service,"Charge failed for $82.88 on order ORD-29536, card authorization error",req-052f27b8,/api/v1/payments/charge,500,1178
+2026-10-18 19:33:26,INFO,api-gateway,Liveness probe succeeded for api-gateway,req-7b98a690,/health,200,4
+2026-10-18 20:15:10,ERROR,payment-service,Payment declined for order ORD-82845: issuer response code 91,req-3606f4c7,/api/v1/payments/charge,402,532
+2026-10-18 20:32:04,INFO,api-gateway,Request completed: GET /api/v1/cart returned 204 in 91ms,req-ea7f40dd,/api/v1/cart,204,91
+2026-10-18 20:44:17,ERROR,api-gateway,"Upstream inventory-service failed to respond within 24955 ms, returning 504",req-b450d962,/api/v1/products,504,24955
+2026-10-18 21:28:01,INFO,payment-service,Deprecated API version v1 invoked by client,req-5b63a8fd,,200,566
+2026-10-18 21:52:29,ERROR,api-gateway,"Upstream inventory-service failed to respond within 11219 ms, returning 504",req-a90c3291,/api/v1/products,408,11219
+2026-10-18 23:30:06,ERROR,api-gateway,Gateway timeout on /api/v1/products: inventory-service did not respond,req-9f4fa49a,/api/v1/products,408,11527
