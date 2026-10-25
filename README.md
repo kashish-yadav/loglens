@@ -73,6 +73,3 @@ matching is text-based (a blank status code puts a record in its own group); no 
 ## Verification note
 Built in an offline environment: data generation, training, evaluation and report generation were run for real; the 34 tests
 passed using a minimal stand-in for `pytest`, and the dashboard code was executed against stand-ins for Streamlit and Plotly.
-**Real `pytest -q` and `streamlit run app.py` have not been run by the author - please do so.**
-
-MIT License.
